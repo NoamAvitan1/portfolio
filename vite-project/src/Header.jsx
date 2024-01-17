@@ -23,12 +23,14 @@ export default function Header() {
       <nav className="nav">
         <NavBar />
       </nav>
-      <article>
-        <section>
-          <h1>Hey, I'm Noam Avitan,</h1>
-          <span>And I'm</span>
-          <span ref={el}></span>
-          <p></p>
+      <article className="data">
+        <section className="paragraph">
+          <h1 style={{fontSize:'40px', color:'var(--text-color)' ,fontWeight:'bold'}}>Hey, I'm Noam Avitan</h1>
+          <div className="type">
+          <span style={{color:'var(--text-color)', fontSize:'23px'}}>And I'm</span>
+          <span style={{color:'var(--main-color)', padding:'4px', fontSize:'23px'}} ref={el}></span>
+          </div>
+          <p style={{wordBreak:"break-word", width:'340px', lineHeight:'22px', color:'var(--second-text-color)', marginTop:'10px'}}>Fullstack development is a symphony of creativity and functionality, seamlessly fusing frontend aesthetics and backend robustness to compose user-centric and efficient solutions.</p>
         </section>
         <figure>
           <img src="" alt="" />

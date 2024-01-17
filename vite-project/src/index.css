@@ -6,6 +6,7 @@
 :root{
    --bg-color: #1f242d;
   --second-bg-color: #323946;
+  --second-text-color: #c0b9b9;
   --text-color: #fff;
   --main-color: #0ef; 
 }
@@ -20,7 +21,7 @@ body{
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -29,7 +30,7 @@ body{
 
 ::-webkit-scrollbar-thumb {
   background: var(--main-color);
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 
