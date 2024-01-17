@@ -1,0 +1,38 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+   --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef; 
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */

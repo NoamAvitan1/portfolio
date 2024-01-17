@@ -1,0 +1,61 @@
+.NavBar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* background-color: var(--second-bg-color); */
+}
+
+.ar{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.NavBar .title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: white;
+    text-shadow: 4px 3px 6px;
+    pointer-events: none;
+}
+
+.NavBar .navigation{
+    font-size: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.NavBar .page{
+    text-decoration: none;
+    color: white;
+    border-color: unset;
+    transition-duration: 0.5s;
+}
+
+.NavBar .page:hover{
+    transition-duration: 0.8s;
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+
+.NavBar .info{
+    display: flex;
+}
+
+.NavBar .link{
+    font-size: 20px;
+    text-decoration: unset;
+    color: white;
+    padding: 7px;
+}
+
+
+/* @media (width < 1180px){
+    .NavBar{
+        width: 80%;
+    }
+    
+} */
