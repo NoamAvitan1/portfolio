@@ -21,6 +21,17 @@
   gap: 10px;
 }
 
+ .info {
+  display: flex;
+}
+
+ .link {
+  font-size: 20px;
+  text-decoration: unset;
+  color: white;
+  padding: 7px;
+}
+
 
 .data{
   width: 70%;

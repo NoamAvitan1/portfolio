@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Header.css";
 import NavBar from "./NavBar";
 import Typed from "typed.js";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 export default function Header() {
-  const el = React.useRef(null);
+  const el = useRef();
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Frontend Developer", "Backend Developer"],
+      strings: ["Full-stack Developer"],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
@@ -31,6 +33,17 @@ export default function Header() {
           <span style={{color:'var(--main-color)', padding:'4px', fontSize:'23px'}} ref={el}></span>
           </div>
           <p style={{wordBreak:"break-word", width:'340px', lineHeight:'22px', color:'var(--second-text-color)', marginTop:'10px'}}>Fullstack development is a symphony of creativity and functionality, seamlessly fusing frontend aesthetics and backend robustness to compose user-centric and efficient solutions.</p>
+          <div className="info">
+          <a className="link" href="https://github.com/NoamAvitan1">
+            <FaGithub />
+          </a>
+          <a
+            className="link"
+            href="https://www.linkedin.com/in/noam-avitan-33a390271/"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
         </section>
         <figure>
           <img src="" alt="" />

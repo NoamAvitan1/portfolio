@@ -1,0 +1,30 @@
+.navigation{
+    font-size: 20px;
+     display: flex;
+     flex-direction: row;
+     gap: 30px; 
+}
+.page{
+    text-decoration: none;
+    color: white;
+    border-color: unset;
+    transition-duration: 0.5s;
+}
+.page:hover{
+    transition-duration: 0.8s;
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+
+@media (width < 820px) {
+    .navigation{
+        flex-direction: column;
+        text-align: center;
+    }
+    .page{
+        color: var(--main-color);
+    }
+}
+
+
+
