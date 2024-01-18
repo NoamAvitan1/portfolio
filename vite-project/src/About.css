@@ -2,8 +2,10 @@
     height: 800px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 60px;
 }
 
 .about-data{
@@ -14,9 +16,6 @@
     position: relative;
 }
 
-.about-map{
- 
-}
 
 .card{
     background-color: var(--second-bg-color);
@@ -27,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 
 .card-choosed{
@@ -40,7 +39,7 @@
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--main-color);
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     transform: scale(1.03);
 }
 
@@ -52,4 +51,52 @@
     top: 0;
     right: 0;
     position: absolute;
+}
+
+
+@media (width < 1260px){
+    .text{
+        position: static;
+        line-height: 20px;
+        font-size: 15px;
+        width: 520px;
+        text-align: center;
+    }
+    .about-data{
+        justify-content: center;
+        align-items: center;
+    }
+    .about-map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .card{
+        width: 520px;
+    }
+    .card-choosed{
+        width: 520px;
+    }
+}
+
+
+@media (width < 610px){
+    .card,.card-choosed,.text{
+        width: 450px;
+    }
+}
+
+
+@media (width < 520px){
+    .card,.card-choosed,.text{
+        width: 400px;
+    }
+}
+
+@media (width < 460px){
+    .card,.card-choosed,.text{
+        width: 350px;
+    }
 }

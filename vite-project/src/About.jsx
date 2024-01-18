@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./About.css";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { AiOutlineCodepen } from "react-icons/ai";
@@ -11,7 +11,7 @@ export default function About() {
   const data = [
     {
       title: "Code",
-      topic: "Passionate Algorithm Enthusiast",
+      topic: "Clean Code Advocate",
       paragraph:
         "As a full-stack developer, I prioritize the creation of clean code that is both readable and maintainable. Clean code, to me, means more than just aesthetic appeal; it embodies a commitment to clarity, modularity, and efficiency. I believe in the power of meaningful variable names, consistent formatting, and the elimination of code duplication to enhance readability. Through continuous refactoring and a focus on testing, I ensure that my code remains adaptable and reliable. ",
       icon: <IoCodeSlashOutline/>,
@@ -31,13 +31,36 @@ export default function About() {
       icon: <SiAtom/>,
     },
   ];
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1260) {
+        setType('Code');
+      }
+    };
+
+    window.addEventListener("resize", () => handleResize());
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const updateType = (titleType) => {
+    if(type === titleType && window.innerWidth < 1260){
+      setType(null);
+      return;
+    }
+    setType(titleType);
+  }
+
   return (
     <article className="About" id="about">
+      <h1 style={{fontSize:'36px', color:'var(--main-color)',fontFamily:'monospace'}}>Discovering My world </h1>
       <div className="about-data">
       {data &&
         data.map((v, i) => (
           <section className="about-map" key={i}>
-              <div onClick={()=>setType(v.title)} className={`${type === v.title ?'card-choosed':'card'}`}>
+              <div onClick={()=>updateType(v.title)} className={`${type === v.title ?'card-choosed':'card'}`}>
                 <div style={{display:'flex', flexDirection:"column",gap:'10px'}}>
                   <h1 style={{color:"var(--text-color)", fontSize:'28px'}}>{v.title}</h1>
                   <span style={{color:"var(--second-text-color)",fontSize:'16px'}}>{v.topic}</span>
