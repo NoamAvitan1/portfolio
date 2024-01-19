@@ -2,18 +2,17 @@ import React from 'react'
 import './Menu.css'
 
  
-export default function () {
+export default function ({toggle,setToggle}) {
+  const links = [
+  {href:"#about",text:'About'},
+  {href:"#projects",text:'Projects'},
+  {href:"#contacts",text:"Contact"}, 
+ ];
   return (
         <section className="navigation">
-        <a className="page" href="#about">
-          About
-        </a>
-        <a className="page" href="#projects">
-          Projects
-        </a>
-        <a className="page" href="#contact">
-          Contact
-        </a>
+          {links.map((link,i) => (
+            <a onClick={()=>setToggle(!toggle)} key={i} className="page" href={link.href}>{link.text}</a>
+          ))}
       </section>
   )
 }

@@ -9,7 +9,7 @@ export default function NavBar() {
       <article className="ar">
         <h1 className="title">Portfolio</h1>
         <section className="menu-bar">
-          <Menu />
+          <Menu setToggle={setToggle} toggle={toggle}/>
         </section>
         <button onClick={()=>setToggle(!toggle)} className="button-menu">
           <span className={`${toggle ? 'close-menu-first' : 'span-menu'}`}></span>
@@ -19,7 +19,7 @@ export default function NavBar() {
       </article>
       { 
         <section className={`slide-menu ${toggle ? 'visible' : 'hidden'}`}>
-          <Menu/>
+          <Menu setToggle={setToggle} toggle={toggle}/>
         </section>
         }
     </div>

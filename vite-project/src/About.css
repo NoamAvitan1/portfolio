@@ -1,11 +1,18 @@
 .About{
-    height: 800px;
+    height: 730px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 60px;
+    margin-top: -100px;
+}
+
+.About .title{
+ font-size:36px; 
+ color:var(--main-color);
+ font-family: monospace;
 }
 
 .about-data{
@@ -39,7 +46,7 @@
     justify-content: space-between;
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--main-color);
-    transition-duration: 0.5s;
+    transition-duration: all 3s;
     transform: scale(1.03);
 }
 
@@ -51,6 +58,7 @@
     top: 0;
     right: 0;
     position: absolute;
+    transition: all 3s ease-in-out;
 }
 
 
@@ -98,5 +106,8 @@
 @media (width < 460px){
     .card,.card-choosed,.text{
         width: 350px;
+    }
+    .About .title{
+        font-size: 30px;
     }
 }

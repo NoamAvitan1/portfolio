@@ -55,7 +55,7 @@ export default function About() {
 
   return (
     <article className="About" id="about">
-      <h1 style={{fontSize:'36px', color:'var(--main-color)',fontFamily:'monospace'}}>Discovering My world </h1>
+      <h1 className="title">Discovering My world </h1>
       <div className="about-data">
       {data &&
         data.map((v, i) => (
