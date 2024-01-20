@@ -1,5 +1,22 @@
-.Projects{
-    height: 730px;
-    width: 100%;
-    margin-top: 100px;
+.Projects {
+  height: 730px;
+  width: 100%;
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.Projects .title {
+  font-size: 36px;
+  color: var(--main-color);
+  font-family: monospace;
+}
+
+.Projects .data{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
