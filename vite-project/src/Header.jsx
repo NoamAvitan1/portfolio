@@ -7,6 +7,15 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
   const el = useRef();
+  const pdfFile = '../../public/pdf/cv-NoamAvitan.pdf';
+
+  const DownloadCv = () => {
+    const anchor = document.createElement('a');
+    anchor.href = pdfFile;
+    anchor.download = 'cv-NoamAvitan.pdf';
+    anchor.click();
+  }
+
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["Full-stack Developer"],
@@ -44,6 +53,7 @@ export default function Header() {
             <FaLinkedin />
           </a>
         </div>
+        <button className="download-cv" onClick={()=>DownloadCv()}>Download CV</button>
         </section>
         <figure>
           <img src="" alt="" />

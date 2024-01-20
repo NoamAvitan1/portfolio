@@ -32,6 +32,20 @@
   padding: 7px;
 }
 
+.download-cv{
+  background-color: var(--main-color);
+  color: unset;
+  outline: unset;
+  border: unset;
+  width: 130px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px var(--main-color);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 
 .data{
   width: 70%;
