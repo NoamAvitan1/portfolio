@@ -1,11 +1,12 @@
 .Projects {
-  height: 730px;
+  height: 850px;
   width: 100%;
-  margin-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 100px;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 .Projects .title {
@@ -20,3 +21,71 @@
     flex-direction: column;
     gap: 100px;
 }
+ 
+.Projects .site{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+ 
+.Projects .about{
+    width: 30%;
+}
+
+.Projects .name{
+    font-size: 50px;
+    background: linear-gradient(to right, rgb(118, 168, 237), rgb(0, 238, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+.Projects .information{
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--text-color);
+}
+
+.Projects .link{
+    width: 40%; 
+}
+
+.Projects .image{
+    width: 100%; 
+    box-shadow: 5px 5px 13px var(--main-color);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.Projects .image:hover{
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+
+
+@media (width < 1360px){
+    .Projects .data{
+        width: 80%;
+    }
+}
+
+
+
+@media (width < 1200px){
+    .Projects .data{
+        width: 90%;
+    }
+    .Projects .about{
+        width: 40%;
+    }
+}
+
+
+@media (width < 1000px){
+    .Projects .site{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

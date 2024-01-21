@@ -6,7 +6,7 @@ export default function ({toggle,setToggle}) {
   const links = [
   {href:"#about",text:'About'},
   {href:"#projects",text:'Projects'},
-  {href:"#contacts",text:"Contact"}, 
+  {href:"#contact",text:"Contact"}, 
  ];
   return (
         <section className="navigation">

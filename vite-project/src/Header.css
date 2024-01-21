@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    gap: 300px;
+    gap: 280px;
     height: 100%;
     width: 100%;
     /* background: linear-gradient(to right, rgb(47, 58, 60), rgb(46, 67, 71), rgb(47, 58, 60)); */
@@ -44,6 +44,12 @@
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+.download-cv:hover{
+  transition-duration: 0.3s;
+  transform: scale(1.1);
 }
 
 
