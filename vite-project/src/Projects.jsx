@@ -30,6 +30,7 @@ export default function Projects() {
             <div className="about">
             <h1 className="name">{site.name}</h1>
             <p className="information">{site.information}</p>
+            <a className="button-link" href={site.link}>View Site</a>
             </div>
             <a className="link" href={site.link}>
             <img className="image" src={site.img} alt=""/>
