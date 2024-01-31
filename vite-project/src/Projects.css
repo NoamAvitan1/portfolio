@@ -1,5 +1,5 @@
 .Projects {
-  height: 850px;
+  height: 900px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -18,18 +18,31 @@
 .Projects .data{
     width: 70%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     gap: 100px;
 }
  
 .Projects .site{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 8px var(--main-color);
+    height: 500px;
+    width: 350px;
+    gap: 10px;
+    transition-duration: 0.3s;
 }
  
 .Projects .about{
-    width: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
 }
 
 .Projects .name{
@@ -42,28 +55,47 @@
 .Projects .information{
     font-size: 18px;
     line-height: 30px;
-    color: var(--text-color);
+    text-align: center;
+    color: var(--second-text-color);
+    padding: 4px;
 }
 
 .Projects .link{
-    width: 40%; 
+    width: 100%; 
 }
 
 .Projects .image{
-    width: 100%; 
     box-shadow: 5px 5px 13px var(--main-color);
     transition-duration: 0.4s;
+    width: 100%; 
+    box-shadow:none;
     cursor: pointer;
 }
-
 
 .Projects .image:hover{
     transform: scale(1.1);
     transition-duration: 0.4s;
 }
 
+.Projects .site:hover{
+    transform: translateY(-30px);
+    transition-duration: 0.3s;
+}
+
+.Projects .image:hover{
+    transform: scale(1);
+}
+
+
 .button-link{
-    display: none;
+    display: block;
+    text-decoration: unset;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
 }
 
 
@@ -80,70 +112,8 @@
     .Projects .data{
         width: 90%;
     }
-    .Projects .about{
-        width: 40%;
-    }
+    
 }
-
-
-@media (width < 1000px){
-    .Projects .site{
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-        box-shadow: 5px 5px 8px var(--main-color);
-        height: 500px;
-        width: 400px;
-        gap: 10px;
-        transition-duration: 0.3s;
-    }
-    .Projects .site:hover{
-        transform: translateY(-30px);
-        transition-duration: 0.3s;
-    }
-    .Projects .information{
-        /* display: none; */
-        text-align: center;
-        color: var(--second-text-color);
-        padding: 4px;
-    }
-
-    .Projects .link{
-        width: 100%;
-    }
-
-    .Projects .image{
-        width: 100%; 
-        box-shadow:none;
-        cursor: pointer;
-        opacity: 0.5;
-    } 
-    .Projects .image:hover{
-        transform: scale(1);
-    }
-    .Projects .data{
-        flex-direction: row;
-    }
-    .Projects .about{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        height: 100%;
-    }
-    .button-link{
-        display: block;
-        text-decoration: unset;
-        color: var(--text-color);
-        background-color: var(--second-bg-color);
-        width: 100px;
-        padding: 10px;
-        border-radius: 8px;
-        font-size: 20px;
-    }
-}
-
 
 @media (width < 760px){
     .Projects .data{
@@ -152,7 +122,20 @@
     }
 
     .Projects{
-        height: 1200px;
+        height: 1300px;
+    }
+}
+
+
+@media (width < 450px){
+    .Projects .site{
+        width: 370px;
+    }
+}
+
+@media (width < 410px){
+    .Projects .site{
+        width: 340px;
     }
 }
 
