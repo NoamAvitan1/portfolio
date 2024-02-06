@@ -3,11 +3,28 @@
     margin-top: 100px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
 .Contact .title{
     font-size:36px; 
     color:var(--main-color);
     font-family: monospace;
+}
+
+.Contact .contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.Contact .data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: start;
 }
