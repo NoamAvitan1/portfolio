@@ -6,12 +6,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
   const el = useRef();
-  const pdfFile = "/cv.pdf";
+  const pdfFile = "/currentCV.pdf";
 
   const DownloadCv = () => {
     const anchor = document.createElement("a");
     anchor.href = pdfFile;
-    anchor.download = "cv.pdf";
+    anchor.download = "currentCV.pdf";
     anchor.click();
   };
 
