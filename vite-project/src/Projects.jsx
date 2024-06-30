@@ -25,7 +25,7 @@ export default function Projects() {
       information:
       "Developed a dynamic movies site showcasing fullstack development skills, featuring user authentication, movie search, and detailed reviews using a MERN stack.",
       img:image3,
-      link:"https://omdbmoviesnoam.netlify.app/ "
+      link:"https://omdbmoviesnoam.netlify.app/"
     }
   ];
 
