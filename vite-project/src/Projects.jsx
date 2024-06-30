@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import image1 from "./assets/Screenshot 2024-01-20 194608.png";
 import image2 from "./assets/Screenshot 2024-01-20 194627.png";
+import image3 from "./assets/Screenshot 2024-06-30 165217.png"
 
 export default function Projects() {
   const sites = [
@@ -19,6 +20,13 @@ export default function Projects() {
       img: image2,
       link:"https://gamezone4u.onrender.com/",
     },
+    {
+      name:"Movies",
+      information:
+      "Developed a dynamic movies site showcasing fullstack development skills, featuring user authentication, movie search, and detailed reviews using a MERN stack.",
+      img:image3,
+      link:"https://omdbmoviesnoam.netlify.app/"
+    }
   ];
 
   return (
