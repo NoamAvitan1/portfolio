@@ -67,12 +67,12 @@ export default function Header() {
             }}
           >
             {" "}
-            I am a motivated Full Stack Engineer with 6 months of experience as
-            a fullstack developer, proficient in Node.js, MongoDB and React.js.
-            Completed the 'Speed Tech' accelerated course by the IDF, excelling
-            in web development. Adept at problem-solving and committed to
-            staying updated with evolving frameworks and technologies. Eager to
-            contribute my skills and passion to my next position.
+            I am a motivated Full Stack Engineer with hands-on experience in
+            Node.js, MongoDB, and React.js. I completed the 'Speed Tech'
+            accelerated course by the IDF, excelling in web development. I am
+            adept at problem-solving and committed to staying updated with
+            evolving frameworks and technologies. I am eager to contribute my
+            skills and passion to my next position.
           </p>
           <div className="info">
             <a className="link" href="https://github.com/NoamAvitan1">

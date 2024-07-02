@@ -1,5 +1,5 @@
 .Projects {
-  height: 900px;
+  height: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -17,9 +17,10 @@
 
 .Projects .data{
     width: 70%;
-    display: flex;
+    flex-wrap: wrap;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     gap: 100px;
 }
  
@@ -30,7 +31,7 @@
     align-items: center;
     text-align: center;
     box-shadow: 5px 5px 8px var(--main-color);
-    height: 500px;
+    height: 520px;
     width: 350px;
     gap: 10px;
     transition-duration: 0.3s;
@@ -43,6 +44,7 @@
     align-items: center;
     gap: 20px;
     height: 100%;
+    justify-content: space-around;
 }
 
 .Projects .name{
@@ -53,7 +55,7 @@
 }
 
 .Projects .information{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
     text-align: center;
     color: var(--second-text-color);
@@ -87,15 +89,18 @@
 }
 
 
-.button-link{
+.button-link,
+.button-link-second {
     display: block;
-    text-decoration: unset;
+    text-decoration: none; 
     color: var(--text-color);
     background-color: var(--second-bg-color);
-    width: 100px;
+    width: 120px; 
     padding: 10px;
     border-radius: 8px;
     font-size: 20px;
+    text-align: center;
+    white-space: nowrap; 
 }
 
 
@@ -106,16 +111,17 @@
     }
 }
 
-
+@media (width < 1260px) {
+    .Projects{
+        height: 2500px;
+    }
+}
 
 @media (width < 1200px){
     .Projects .data{
         width: 90%;
         flex-direction: column;
         align-items: center;
-    }
-    .Projects{
-        height: 1800px;
     }
 }
 
